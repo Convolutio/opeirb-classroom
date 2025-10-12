@@ -46,7 +46,7 @@ function syncToHugo() {
           try {
             rm('./static/svelte/index.html');
           } catch {
-            console.log("osef le fichier n'existe pas");
+            // skip when the file does not exist
           }
         }
       ]);
